@@ -14,6 +14,7 @@ CREATE TABLE employees
 employee_id int NOT NULL,
 first_name varchar( 30 ) NOT NULL,
 last_name varchar ( 50 ) NOT NULL,
+title text NOT NULL,
 birth_date date NOT NULL,
 notes text,
 PRIMARY KEY ( employee_id )
