@@ -1,4 +1,16 @@
+CREATE DATABASE homework4;
+\connect homework4
+
 -- 1. Создать таблицу student с полями student_id serial, first_name varchar, last_name varchar, birthday date, phone varchar
+CREATE TABLE student
+(
+student_id serial,
+first_name varchar( 30 ) NOT NULL,
+last_name varchar( 50 ) NOT NULL,
+birthdate date NOT NULL,
+phone varchar,
+PRIMARY KEY ( student_id )
+);
 
 
 -- 2. Добавить в таблицу student колонку middle_name varchar

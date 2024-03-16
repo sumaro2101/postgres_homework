@@ -31,4 +31,4 @@ WHERE orders.order_id IS NULL;
 -- Этот запрос написать именно с использованием подзапроса.
 SELECT DISTINCT product_name
 FROM products
-WHERE product_id = ANY (SELECT product_id FROM order_details WHERE quantity = 10);
+WHERE product_id = ANY ( SELECT product_id FROM order_details WHERE quantity = 10 );
